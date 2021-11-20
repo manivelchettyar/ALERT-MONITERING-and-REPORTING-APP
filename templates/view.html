@@ -1,0 +1,10 @@
+<!doctype html>
+<title>IVR COUNT</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+  <h1>DAILY COUNT</h1>
+  <a>IVR ACD OFFERED TRANSFERRED COUNT FOR {{previous_date}}  </a>
+   {% for table in tables%}
+    {{ table|safe }}
+    {% endfor %}
+</div>
